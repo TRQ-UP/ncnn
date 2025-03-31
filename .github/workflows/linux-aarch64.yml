@@ -30,7 +30,7 @@ permissions:
 
 jobs:
   gcc-aarch64:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
 
@@ -99,7 +99,7 @@ jobs:
         TESTS_EXECUTABLE_LOADER=qemu-aarch64 TESTS_EXECUTABLE_LOADER_ARGUMENTS="-L;/usr/aarch64-linux-gnu" ctest --output-on-failure -j $(nproc)
 
   gcc-arm82:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
 
